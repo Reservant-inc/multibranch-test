@@ -12,7 +12,7 @@ public class WeatherForecastService : IWeatherForecastService
     private static readonly string[] Summaries =
     {
         "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-    };
+    }
 
     public IEnumerable<WeatherForecast> GetWeatherForecast() =>
         Enumerable.Range(1, 5)
