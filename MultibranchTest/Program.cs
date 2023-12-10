@@ -17,7 +17,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.MapGet("/weatherforecast",
+app.MapGet("/weather-forecast",
         (IWeatherForecastService forecastService) => forecastService.GetWeatherForecast())
     .WithName("GetWeatherForecast")
     .WithOpenApi();
